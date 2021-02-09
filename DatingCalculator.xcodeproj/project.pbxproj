@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		6C716E6425D1F9D8001CDD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E6325D1F9D8001CDD77 /* AppDelegate.swift */; };
 		6C716E6625D1F9D8001CDD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E6525D1F9D8001CDD77 /* SceneDelegate.swift */; };
-		6C716E6825D1F9D8001CDD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E6725D1F9D8001CDD77 /* ViewController.swift */; };
 		6C716E6B25D1F9D8001CDD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C716E6925D1F9D8001CDD77 /* Main.storyboard */; };
 		6C716E6D25D1F9DA001CDD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C716E6C25D1F9DA001CDD77 /* Assets.xcassets */; };
 		6C716E7025D1F9DA001CDD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C716E6E25D1F9DA001CDD77 /* LaunchScreen.storyboard */; };
+		6C716E8025D20ECD001CDD77 /* DatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E7F25D20ECD001CDD77 /* DatingLabel.swift */; };
+		6C716E8325D20ED4001CDD77 /* DatingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E8225D20ED4001CDD77 /* DatingSlider.swift */; };
+		6C716E8625D20F20001CDD77 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C716E8525D20F20001CDD77 /* Colors.xcassets */; };
+		6C716E9325D20F98001CDD77 /* DatingCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716E9225D20F98001CDD77 /* DatingCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C716E6025D1F9D8001CDD77 /* DatingCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C716E6325D1F9D8001CDD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C716E6525D1F9D8001CDD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C716E6725D1F9D8001CDD77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C716E6A25D1F9D8001CDD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C716E6C25D1F9DA001CDD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C716E6F25D1F9DA001CDD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C716E7125D1F9DA001CDD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C716E7F25D20ECD001CDD77 /* DatingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingLabel.swift; sourceTree = "<group>"; };
+		6C716E8225D20ED4001CDD77 /* DatingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingSlider.swift; sourceTree = "<group>"; };
+		6C716E8525D20F20001CDD77 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		6C716E9225D20F98001CDD77 /* DatingCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		6C716E6225D1F9D8001CDD77 /* DatingCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				6C716E6325D1F9D8001CDD77 /* AppDelegate.swift */,
-				6C716E6525D1F9D8001CDD77 /* SceneDelegate.swift */,
-				6C716E6725D1F9D8001CDD77 /* ViewController.swift */,
-				6C716E6925D1F9D8001CDD77 /* Main.storyboard */,
-				6C716E6C25D1F9DA001CDD77 /* Assets.xcassets */,
-				6C716E6E25D1F9DA001CDD77 /* LaunchScreen.storyboard */,
-				6C716E7125D1F9DA001CDD77 /* Info.plist */,
+				6C716E8A25D20F65001CDD77 /* View Controller */,
+				6C716E7C25D20E90001CDD77 /* Views */,
+				6C716E7A25D1FA05001CDD77 /* Storyboards */,
+				6C716E7825D1F9F1001CDD77 /* Resources */,
 			);
 			path = DatingCalculator;
+			sourceTree = "<group>";
+		};
+		6C716E7825D1F9F1001CDD77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E6C25D1F9DA001CDD77 /* Assets.xcassets */,
+				6C716E7125D1F9DA001CDD77 /* Info.plist */,
+				6C716E6325D1F9D8001CDD77 /* AppDelegate.swift */,
+				6C716E6525D1F9D8001CDD77 /* SceneDelegate.swift */,
+				6C716E8525D20F20001CDD77 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C716E7A25D1FA05001CDD77 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E6925D1F9D8001CDD77 /* Main.storyboard */,
+				6C716E6E25D1F9DA001CDD77 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6C716E7C25D20E90001CDD77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E7E25D20EA1001CDD77 /* Custom Sliders */,
+				6C716E7D25D20E95001CDD77 /* Custom Labels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C716E7D25D20E95001CDD77 /* Custom Labels */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E7F25D20ECD001CDD77 /* DatingLabel.swift */,
+			);
+			path = "Custom Labels";
+			sourceTree = "<group>";
+		};
+		6C716E7E25D20EA1001CDD77 /* Custom Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E8225D20ED4001CDD77 /* DatingSlider.swift */,
+			);
+			path = "Custom Sliders";
+			sourceTree = "<group>";
+		};
+		6C716E8A25D20F65001CDD77 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C716E9225D20F98001CDD77 /* DatingCalculatorViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C716E7025D1F9DA001CDD77 /* LaunchScreen.storyboard in Resources */,
+				6C716E8625D20F20001CDD77 /* Colors.xcassets in Resources */,
 				6C716E6D25D1F9DA001CDD77 /* Assets.xcassets in Resources */,
 				6C716E6B25D1F9D8001CDD77 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C716E6825D1F9D8001CDD77 /* ViewController.swift in Sources */,
+				6C716E8025D20ECD001CDD77 /* DatingLabel.swift in Sources */,
+				6C716E9325D20F98001CDD77 /* DatingCalculatorViewController.swift in Sources */,
 				6C716E6425D1F9D8001CDD77 /* AppDelegate.swift in Sources */,
 				6C716E6625D1F9D8001CDD77 /* SceneDelegate.swift in Sources */,
+				6C716E8325D20ED4001CDD77 /* DatingSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = DatingCalculator/Info.plist;
+				INFOPLIST_FILE = DatingCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = DatingCalculator/Info.plist;
+				INFOPLIST_FILE = DatingCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
